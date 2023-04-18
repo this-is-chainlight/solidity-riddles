@@ -60,6 +60,7 @@ describe(NAME, function () {
             // contract you are attacking.
             // We've already written the JS code above to deploy a
             // contract called "NameServiceAttacker" for you.
+            await NameServiceAttacker.attack({ value: ethers.utils.parseEther("1") })
         });
 
         after(async function () {
